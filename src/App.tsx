@@ -4,6 +4,8 @@ import { ToastContainer } from "react-toastify";
 import RouteConfig from './routes/RouteConfig';
 import { Header } from './layout/Header';
 import { Footer } from './layout/Footer';
+import { CartSidebar } from './components/CartSidebar';
+
 function App() {
 
   return (
@@ -15,6 +17,7 @@ function App() {
           <RouteConfig />
         </div>
         <Footer />
+        <CartSidebar />
         <ToastContainer />
       </BrowserRouter>
     </>

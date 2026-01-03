@@ -6,6 +6,7 @@ import ProtectedRoute from './ProtectedRoute';
 // Lazy-loaded components (add more if needed)
 const AuthPage = lazy(() => import('@/domains/auth/AuthPage'));
 const ProductPage = lazy(() => import('@/domains/product/ProductPage'));
+const OrderPage = lazy(() => import('@/domains/order/OrderPage'));
 // const Page404 = lazy(() => import('@/domains/errors/Page404'));
 
 // Define the component using React.FC (Function Component) for better type checking
@@ -21,6 +22,7 @@ const RouteConfig: React.FC = () => {
                 {/* Protected routes */}
                 <Route element={<ProtectedRoute/>}>
                     <Route path="/product-page" element={<ProductPage />} />
+                    <Route path="/order-page" element={<OrderPage />} />
                 </Route>
 
                 {/* Error Pages and Special Routes

@@ -72,8 +72,7 @@ export function SignInForm() {
           {/* Sign In Button */}
           <Button 
             type="submit" 
-            variant="default"
-            className="w-full !bg-blue-600 !hover:bg-blue-700 text-white py-6 rounded-full submitt-button"
+             className="w-full py-6 rounded-full submitt-button text-black"
             disabled={isLoading}
           >
             {isLoading ? (
